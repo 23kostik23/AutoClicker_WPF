@@ -1,0 +1,25 @@
+﻿<Window x:Class="AutoClicker_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoClicker_WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="400">
+    <Grid Background="#222">
+        <StackPanel Margin="10">
+            <TextBlock Text="AutoClicker" Foreground="White" FontSize="30" HorizontalAlignment="Center"/>
+            <TextBlock Text="Made by 23kostik23" Foreground="#777" FontSize="20" HorizontalAlignment="Center" FontStyle="Oblique"/>
+
+
+            <TextBlock Text="Interval (ms):" Foreground="White" FontSize="16" Margin="0,30,0,10"/>
+            <TextBox x:Name="IntervalTextBox" Text="1000" Margin="0,0,0,20"/>
+            <Button Content="Select a point position" Click="SelectPointPosition_Click"  Margin="0,0,0,20"/>
+            <Button Content="Start" Click="StartButton_Click" Margin="0,0,0,20"/>
+            <Button Content="Stop (Also can press S on your keyboard)" Click="StopButton_Click"/>
+
+            <TextBlock Visibility="Visible" x:Name="PosXTextBlock" VerticalAlignment="Center" Margin="5" Foreground="White"/>
+            <TextBlock Visibility="Visible" x:Name="PosYTextBlock" VerticalAlignment="Center" Margin="5" Foreground="White"/>
+        </StackPanel>
+    </Grid>
+</Window>
