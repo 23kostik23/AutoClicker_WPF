@@ -17,10 +17,8 @@ namespace AutoClicker_WPF
             SetCursorPos(x, y);
 
             mouse_event(MOUSEEVENTF_LEFTDOWN, x, y, 0, 0);
-            Thread.Sleep(10); 
             mouse_event(MOUSEEVENTF_LEFTUP, x, y, 0, 0);
 
-            // Ждем интервал перед следующим кликом
             Thread.Sleep(interval);
         }
 

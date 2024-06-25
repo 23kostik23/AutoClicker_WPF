@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AutoClicker_WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="400">
+        Title="AutoClicker" Height="600" Width="400" Icon="/autoClicker img.png">
     <Grid Background="#222">
         <StackPanel Margin="10">
             <TextBlock Text="AutoClicker" Foreground="White" FontSize="30" HorizontalAlignment="Center"/>

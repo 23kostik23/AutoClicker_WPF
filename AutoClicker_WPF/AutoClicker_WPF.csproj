@@ -9,7 +9,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="autoClicker img.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="GlobalHotKey" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="autoClicker img.png" />
   </ItemGroup>
 
 </Project>

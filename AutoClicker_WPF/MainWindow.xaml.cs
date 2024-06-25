@@ -76,6 +76,7 @@ namespace AutoClicker_WPF
         public void StartButton_Click(object sender, EventArgs e)
         {
             Interval = Convert.ToInt32(IntervalTextBox.Text);
+            Interval = Math.Abs(Interval);
             if (!isClicking)
             {
                 isClicking = true;
